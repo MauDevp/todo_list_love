@@ -1,0 +1,8 @@
+.div-body{
+    background: rgb(241,139,139);
+    background: linear-gradient(180deg, rgba(241,139,139,1) 0%, rgba(230,150,105,1) 38%, rgba(225,166,134,1) 69%, rgba(241,139,139,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
