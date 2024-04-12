@@ -1,12 +1,12 @@
 import './TodoItem.css';
 
-function TodoItem({Text, Completed}){
+function TodoItem(props){
     return (
       <container>
-        <li>
-          <input type="checkbox" checked={Completed}/>
-            <p className={Completed ? 'completed' : ''}>{Text}</p>
-          <button className="circle-button">X</button> 
+        <li className='TodoItem'>
+          <input type="checkbox" checked={props.Completed} className={`Icon Icon-check ${props.Completed && "Icon-check--active"}`}/>
+            <p className={`TodoItem-p ${props.Completed && "TodoItem-p--complete"}`}>{props.Text}</p>
+          <button className="circle-button Icon Icon-delete">X</button> 
         </li>
       </container>
     );
