@@ -1,3 +1,4 @@
+import React from "react";
 import { TodoCounter } from "../TodoCounter";
 import { TodoSearch } from "../TodoSearch";
 import { TodoList } from "../TodoList";
@@ -11,7 +12,7 @@ import { EmptyTodos } from "../EmptyTodos";
 import { EmptyTodosCounter } from "../EmptyTodosCounter";
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../Modal";
-import React from "react";
+import { TodoForm } from "../TodoForm";
 
 function AppUI() {
   const {
@@ -56,7 +57,7 @@ function AppUI() {
         <CreateTodoButton />
         {openModal && (
           <Modal>
-            La funcionalidad de agregar TODOs
+            <TodoForm/>
           </Modal>
         )}
       </TodoWraper>
