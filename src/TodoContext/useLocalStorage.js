@@ -16,7 +16,6 @@ function useLocalStorage(itemName, initialValue ) {
                 
                 if (!localStorageItem) {
                     localStorage.setItem("TODO_V1", JSON.stringify(initialValue));
-                    // localStorage.setItem("TODO_V3", JSON.stringify(TODOS_V1));
                     parsedItem = initialValue;
                 } else {
                     parsedItem = JSON.parse(localStorageItem);
@@ -29,7 +28,7 @@ function useLocalStorage(itemName, initialValue ) {
                 setError(true);
             }
         }, 3000);
-    }, [itemName, initialValue]);
+    }, []);
 
 
     const saveItems = (newItem) => {
