@@ -1,0 +1,68 @@
+
+.TodoCounter{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 400;
+}
+.TodoCounter span{
+    font-size: 34px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.TodoCounter--finalizado{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(193, 114, 41, 0.819);
+    font-size: 34px;
+    font-weight: 450;
+}
+.TodoCounter--finalizado span{
+    font-size: 34px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.Container-TodoCounter{
+    box-sizing: border-box;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    width: 700px;
+    height: 120px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: #24678D;
+    margin: 0;
+    padding: 0;
+}
+
+.Container--enProgreso{
+    box-shadow: 5px 4px 16px rgba(0, 0, 0, 0.496);
+}
+.Container--finalizado{
+    box-shadow: 4px 4px 8px rgba(173, 173, 173, 0.264);
+}
+
+@media (max-width: 768px) {
+    .Container-TodoCounter {
+        width: 88vw;
+        height: 14vh;
+        padding: 20px;
+    }
+    .TodoCounter{
+        font-size: 28px;
+    }
+    .TodoCounter span{
+        font-size: 26px;
+    }
+    .Container--finalizado p{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .Container--finalizado span {
+        font-size: 26px;
+    }
+}

@@ -16,7 +16,7 @@
 }
 .TodoSearch::placeholder{
     color: rgb(109, 109, 109);
-    background-image: url('../resource/lupa.png');
+    background-image: url('../../resource/lupa.png');
     background-size: 22px 22px;
     background-position: left center;
     background-repeat: no-repeat;
@@ -26,4 +26,10 @@
 
 .TodoSearch:focus{
     border: 2px solid #000000;
+}
+
+@media (max-width: 768px) {
+    .TodoSearch::placeholder {
+        color: transparent;
+    }
 }

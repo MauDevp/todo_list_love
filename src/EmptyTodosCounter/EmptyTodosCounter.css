@@ -1,0 +1,54 @@
+.Container-EmptyTodosCounter {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    width: 700px;
+    height: 120px;
+    border-radius: 12px 12px 0 0;
+    background-color: #24678D;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* When you change the amount of characters in the h1, you have to change 
+  the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+  if there is 20 put 20 */
+.animation {
+    font: 900 280% Consolas, Monaco, monospace;
+    color: rgb(0, 23, 91);
+    border-right: .1em solid rgb(0, 23, 91);
+    width: 11.20ch;
+    margin: 2em 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(11, end), blink-caret .5s step-end infinite alternate;
+}
+@media (max-width: 768px) {
+    .Container-EmptyTodosCounter {
+        width: 88vw;
+        height: 14vh;
+        padding: 0;
+    }
+    .animation{
+        font: 900 190% Consolas, Monaco, monospace;
+    }
+}
