@@ -17,10 +17,10 @@
 }
 
 .TodoForm-textArea{
+    background-color: rgb(255, 255, 255);
     width: 80%;
     height: 90px;
     max-width: 650px;
-    font-size: 1.4rem;
     margin-bottom: 10px;
     padding: 10px;
     border: none;
@@ -29,17 +29,18 @@
     text-align: center;
     transition: 0.1s ease;
     color: #1c1c1ceb;
+    font-size: 1.4rem;
     font-weight: 400;
-    
-    background-color: rgb(255, 255, 255);
+    font-family: Arial;
 }
 .TodoForm-textArea:focus{
     outline: none;
     background-color: rgb(225, 253, 253);
+    color: #3e3d43;
 }
 .TodoForm-textArea::placeholder{
     color: #adadad;
-    font-weight: 400;
+    font-family: Arial;
 }
 
 .TodoForm-buttonContainer{
@@ -68,4 +69,15 @@
 .TodoForm-button--add{
     background-color: #00A6ED;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .TodoForm-container{
+        position: fixed;
+        top: 260px;
+
+    }
+    .TodoForm-textArea::placeholder {
+        color: transparent;
+    }
 }

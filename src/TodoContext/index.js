@@ -25,6 +25,15 @@ function TodoProvider({children}) {
 
     const todoFinalizado = completedTodos === totalTodos && totalTodos > 0;
 
+    const addTodo = (text) => {
+        const newTodos = [...todos];
+        newTodos.push({
+            text,
+            completed: false,
+        });
+        saveTodos(newTodos);
+    };
+
     const completeTodo = (text) => {
         const newTodos = [...todos];
         const todoIndex = newTodos.findIndex((todos) => todos.text === text);
@@ -46,6 +55,7 @@ function TodoProvider({children}) {
             searchValue,
             setSearchValue,
             searchedTodos,
+            addTodo,
             completeTodo,
             deleteTodo,
             todoFinalizado,

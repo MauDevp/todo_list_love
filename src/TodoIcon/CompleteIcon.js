@@ -7,7 +7,6 @@ function CompleteIcon({completed, onComplete}){
             type="check"
             color={completed ? '#4CAF50' : '#C9C9C9'}
             onClick={onComplete}
-
         />
     );
 }
