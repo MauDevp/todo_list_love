@@ -24,6 +24,7 @@ function AppUI() {
     openModal,
     setOpenModal,
   } = React.useContext(TodoContext);
+  const [isFocused, setIsFocused] = React.useState(false);
 
   return (
     <>
@@ -54,10 +55,12 @@ function AppUI() {
             />
           ))}
         </TodoList>
-        <CreateTodoButton />
+        {!isFocused && 
+          <CreateTodoButton />
+        }
         {openModal && (
           <Modal>
-            <TodoForm/>
+            <TodoForm setIsFocused={setIsFocused}/>
           </Modal>
         )}
       </TodoWraper>

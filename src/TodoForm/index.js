@@ -1,8 +1,9 @@
 import React from "react";
 import './TodoForm.css';
 import { TodoContext } from "../TodoContext";
+import {CreateTodoButton} from '../CreateTodoButton';
 
-function TodoForm() {
+function TodoForm({ setIsFocused }) {
     const {
         addTodo,
         setOpenModal,
@@ -16,8 +17,10 @@ function TodoForm() {
         event.preventDefault();
         addTodo(newTodoValue);
         setOpenModal(false);
+        setIsFocused(false);
     };
     const onCancel = () => {
+        setIsFocused(false);
         setOpenModal(false);
     };
     const onChange = (event) => {
@@ -27,7 +30,9 @@ function TodoForm() {
     return (
         <form
             onSubmit={onSubmit}
-            className="TodoForm-container">
+            className="TodoForm-container"
+            onFocus={() => setIsFocused(true)}
+            >
             <label className="TodoForm-label">Escribe tu nuevo TODO</label>
             <textarea
                 value={newTodoValue}
