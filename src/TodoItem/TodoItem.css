@@ -59,6 +59,11 @@
 }
 
 @media (max-width: 768px) {
+    .circle-button{
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
     .TodoItem{
         width: 84vw;
         height: 8vh;

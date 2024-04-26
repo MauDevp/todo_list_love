@@ -1,12 +1,14 @@
 .CreateTodoButton{
     background-color: #D52459;
     box-shadow: 0px 5px 25px rgba(255, 0, 89, 0.5);
+    color: #000000;
     margin: 22px;
     padding: 22px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 64px;
     height: 64px;
     font-size: 50px;
@@ -30,6 +32,6 @@
         right: calc(50vw - 32px);
         bottom: 5vh;
         margin: 0;
-        padding: 0;
+        padding: 22px 0 24px 0;
     } 
 }
