@@ -7,8 +7,8 @@ import { CreateTodoButton } from "../CreateTodoButton";
 import { TodoWraper } from "../TodoWraper";
 import { TodosLoading } from "../TodosLoading";
 import { TodosLoadingCounter } from "../TodosLoadingCounter";
-import { TodosError } from "../TodosError";
 import { EmptyTodos } from "../EmptyTodos";
+import { TodosError } from "../TodosError";
 import { EmptyTodosCounter } from "../EmptyTodosCounter";
 import { TodoContext } from "../TodoContext";
 import { Modal } from "../Modal";
@@ -23,6 +23,7 @@ function AppUI() {
     loading,
     openModal,
     setOpenModal,
+    deleteTodos,
   } = React.useContext(TodoContext);
   const [isFocused, setIsFocused] = React.useState(false);
 

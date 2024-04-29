@@ -3,6 +3,7 @@
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: 400;
+    margin: 0;
 }
 .TodoCounter span{
     font-size: 34px;
@@ -12,8 +13,9 @@
     margin-left: 6px;
 }
 .TodoCounter--finalizado{
+    margin: 0;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(193, 114, 41, 0.819);
+    text-shadow: 2px 2px 8px rgba(193, 114, 41, 0.819);
     font-size: 34px;
     font-weight: 450;
 }
@@ -31,6 +33,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        flex-direction: column;
     width: 700px;
     height: 120px;
     border-radius: 12px 12px 0px 0px;
@@ -50,7 +53,7 @@
     .Container-TodoCounter {
         width: 88vw;
         height: 14vh;
-        padding: 20px;
+        padding: 8px;
     }
     .TodoCounter{
         font-size: 28px;

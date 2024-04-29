@@ -8,9 +8,11 @@
     margin: 14px;
     padding: 0 22px 0 22px;
     border-radius: 14px;
-    box-shadow: 0px 5px 50px rgba(37, 41, 48, 0.227);
+    /* box-shadow: 0px 5px 50px rgba(37, 41, 48, 0.227); */
+    box-shadow: 0px 0px 4
+    px 2px rgba(0, 0, 0, 0.343);
     width: 600px;
-    height: fit-content;
+    height: min-content;
     text-align: center;
 
 }
@@ -26,7 +28,8 @@
 }
 
 .TodoItem-p--complete{
-    text-decoration: line-through;
+    text-decoration: line-through ;
+    color: #dedede;
 }
 
 .circle-button {
@@ -66,10 +69,10 @@
         font-size: 22px;
     }
     .TodoItem{
-        width: 84vw;
-        height: 8vh;
-        margin: 8px;
-        padding: 0;
+        width: 82vw;
+        height: min-content;
+        margin: 0 0 12px 0;
+        padding: 0 4px 0 4px;
     }
     .TodoItem-p{
         font-size: 20px;

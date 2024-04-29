@@ -47,6 +47,11 @@ function TodoProvider({children}) {
         newTodos.splice(todoIndex, 1);
         saveTodos(newTodos);
     };
+    const deleteTodos = () => {
+        const newTodos = [];
+        localStorage.clear();
+        saveTodos(newTodos);
+    };
 
     return (
         <TodoContext.Provider value={{
@@ -63,6 +68,7 @@ function TodoProvider({children}) {
             loading,
             openModal, 
             setOpenModal,
+            deleteTodos,
         }}>
             {children}
         </TodoContext.Provider>
